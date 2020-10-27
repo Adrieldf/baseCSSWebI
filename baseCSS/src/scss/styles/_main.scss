@@ -1,0 +1,28 @@
+
+.sideText {
+  border: 1px solid #c9e3f9;
+  background-color: #dfebf5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sideList {
+  list-style-type: none;
+  padding-left: 5px;
+}
+.sideLinks {
+  color: $darkRed;
+  text-decoration: none;
+}
+.sideLinks:hover {
+  color: $lightRed;
+}
+.mainTitle {
+  color: $darkRed;
+}
+.smallText {
+  font-size: 12px;
+}
+.coloredDescriptionText {
+    color: $darkRed;
+}

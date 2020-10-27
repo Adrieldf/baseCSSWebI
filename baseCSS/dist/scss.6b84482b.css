@@ -1063,6 +1063,77 @@ h6, .h6 {
   line-height: 20px;
 }
 
+.header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.headerText {
+  font-size: 42px;
+  margin-left: 25px;
+}
+
+.serachField {
+  height: 30px;
+}
+
+.searchButton {
+  height: 40px;
+}
+
+.menuBar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#666), to(white));
+  background-image: -o-linear-gradient(#666, white);
+  background-image: linear-gradient(#666, white);
+}
+
+.menuButtons {
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.menuButtons:hover {
+  background-color: gray;
+}
+
+.sideText {
+  border: 1px solid #c9e3f9;
+  background-color: #dfebf5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sideList {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.sideLinks {
+  color: #a90000;
+  text-decoration: none;
+}
+
+.sideLinks:hover {
+  color: #ed0000;
+}
+
+.mainTitle {
+  color: #a90000;
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+.coloredDescriptionText {
+  color: #a90000;
+}
+
 .padding-left-0-25rem {
   padding-left: 0.25rem;
 }
