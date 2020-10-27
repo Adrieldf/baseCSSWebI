@@ -1,4 +1,10 @@
-
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #3a3a3a;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
 .sideText {
   border: 1px solid #c9e3f9;
   background-color: #dfebf5;
@@ -24,5 +30,12 @@
   font-size: 12px;
 }
 .coloredDescriptionText {
-    color: $darkRed;
+  color: $darkRed;
+}
+.thinBorder {
+  border: 1px solid rgba(0,0,0,.10);
+}
+.noHorizontalMargins {
+  margin-left: 0px;
+  margin-right: 0px;
 }

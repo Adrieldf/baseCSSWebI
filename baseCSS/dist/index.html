@@ -15,6 +15,7 @@
     <meta name="theme-color" content="#2920ab">
 
     <link rel="stylesheet" href="/scss.6b84482b.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/scss.6b84482b.js"></script></head>
   <body>
     <div id="content" class="">
@@ -86,19 +87,1007 @@
                   <p>
                     <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Responsive-web-testing.jpg"><img class="alignnone size-full wp-image-10941 lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Responsive-web-testing.jpg" alt="responsive-web-testing" width="485" height="311" sizes="(max-width: 485px) 100vw, 485px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Responsive-web-testing.jpg         485w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Responsive-web-testing-300x192.jpg 300w" data-ll-status="loaded"></a>
                   </p>
-                  <p></p>
-                  <p></p>
-                  <p></p>
+                  <p>
+                    This frustrating experience is exactly what every designer
+                    goes through when they try to design for the web.
+                  </p>
+                  <p>
+                    The fix for the problem is something called “responsive
+                    design”, a technique to have web pages ask the browser what
+                    the resolution is, then gracefully re-design the user
+                    experience based on the available screen real estate.
+                    Suddenly, it is impossible to know exactly how your software
+                    will look in production.
+                  </p>
+                  <p>
+                    That means a test strategy (and an automation strategy) that
+                    needs to be capable of experimenting and learning what
+                    “looks right”, and what doesn’t, at various resolutions.
+                  </p>
+                  <div id="toc_container" class="thinBorder" style="width: auto; display: table; padding: 10px">
+                    <p>
+                      <strong>What You Will Learn:</strong>
+                      <span class="toc_toggle">[<a id="btnToggleLearnList" href="#">hide</a>]</span>
+                    </p>
+                    <ul id="learnList" class="sideList" style="display: block">
+                      <li>
+                        <a class="sideLinks" href="#Beginner8217s_Guide_to_Test_Responsive_Website_Designs">Beginner’s Guide to Test Responsive Website
+                          Designs</a>
+                        <ul class="sideList">
+                          <li>
+                            <a class="sideLinks" href="#What_isResponsive_Web_Design">What is&nbsp;Responsive Web Design?</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Advantages_of_Responsive_Design">Advantages of Responsive Design:</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Main_Components_of_Responsive_Website_Design">Main Components of Responsive Website Design:</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Responsive_Web_Design_Examples">Responsive Web Design Examples</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#How_to_Test_a_Responsive_Website">How to Test a Responsive Website</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Sample_Test_scenarios_for_responsive_website_testing">Sample Test scenarios for responsive website
+                              testing:</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Tools_to_Test_a_Responsive_Website">Tools to Test a Responsive Website</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Challenges_of_Testing_Responsive_Design_and_Possible_Solutions">Challenges of Testing Responsive Design and
+                              Possible Solutions</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Tips_for_Responsive_web_testing">Tips for Responsive web testing</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Conclusion">Conclusion</a>
+                          </li>
+                          <li>
+                            <a class="sideLinks" href="#Recommended_Reading">Recommended Reading</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2>
+                    <span id="Beginner8217s_Guide_to_Test_Responsive_Website_Designs">Beginner’s Guide to Test Responsive Website Designs</span>
+                  </h2>
+                  <p>
+                    When we try to open a website, the server reads
+                    “m.sub-domains” to identify what kind of mobile device the
+                    request originated from. Based on that, it redirects the
+                    user to the corresponding mobile version.
+                  </p>
+                  <p>
+                    To make this 100% effective, each device should have its own
+                    design of the website specifically built for it; for
+                    example, a different specific design for Blackberry, iPhone,
+                    iPad, etc. taking into account their screen size and
+                    resolutions.
+                  </p>
+                  <p>
+                    However, different web version for every resolution and
+                    device is not practical. The&nbsp;<a class="sideLinks" href="http://alistapart.com/article/responsive-web-design">Ethan Marcotte</a>
+                    came up with a new approach- Responsive Web Design (<a class="sideLinks" href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/">RWD</a>) – that solves this problem.
+                  </p>
+                  <h3>
+                    <span id="What_isResponsive_Web_Design">What is&nbsp;Responsive Web Design?</span>
+                  </h3>
+                  <p>
+                    <span style="color: #000000">RWD&nbsp;</span>targets for
+                    websites to react to their device, resolution and be able to
+                    render and adapt correctly.
+                    <strong><span style="text-decoration: underline">For example</span>,</strong>
+                    if the user switches from desktop/ laptop to iPad, then the
+                    website should automatically adapt the resolution changes
+                    like image size etc. as per the respective device abilities.
+                  </p>
+                  <p>
+                    In short,
+                    <span style="color: #000000">Responsive Design</span> is
+                    <span style="color: #000000"><strong>“One website for every screen”</strong></span>.
+                  </p>
+                  <p>
+                    The below screen is an
+                    <span style="text-decoration: underline">example</span> of
+                    RWD:
+                  </p>
+                  <p>
+                    <a class="sideLinks" href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display.jpg"><img class="alignnone wp-image-10837 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-e1563453267196.jpg" alt="RWD example" width="740" height="415" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10837 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-e1563453267196.jpg" alt="RWD example" width="740" height="415"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Note:</strong> Real-time
+                    <span style="text-decoration: underline">example</span> of a
+                    responsive website is <em>www.fpl.com</em>
+                  </p>
+                  <p>
+                    In RWD, a website is designed to give a superior user
+                    experience through easy navigation, clear and simple user
+                    interface, etc. Responsive websites adapt easily and work in
+                    all resolutions, browsers, screen sizes, hardware, and
+                    Operating Systems.
+                  </p>
+                  <ul>
+                    <li>
+                      Responsive websites are coded in PHP, .Net, Java, CQ5
+                      (Adobe Experience Manager – AEM) and many new frameworks
+                      which are very handy to develop responsive designs.
+                    </li>
+                    <li>
+                      CSS and HTML features are leveraged to make screen
+                      resolutions and images get resized automatically.
+                    </li>
+                    <li>
+                      RW design uses breakpoints to identify the layout of a
+                      site. Each design is used at different breakpoints. One
+                      design is applied over a breakpoint whereas another design
+                      is used below the breakpoint. These breakpoints are
+                      generally based on the width of the browsers.
+                    </li>
+                    <li>
+                      While designing a responsive website the developers
+                      consider the content, design, and performance of the site
+                      across all devices to
+                      <a class="sideLinks" href="https://www.softwaretestinghelp.com/usability-testing-guide/">ensure usability</a>.
+                    </li>
+                  </ul>
+                  <p>
+                    The diagram is an accurate simile to how the content adapts
+                    to the environment and behavior of the device.
+                  </p>
+                  <p>
+                    <a class="sideLinks" href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2.jpg"><img class="alignnone wp-image-10836 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2.jpg" alt="example of how content adapts to device" width="600" height="412" sizes="(max-width: 600px) 100vw, 600px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2.jpg         600w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2-300x206.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10836 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2.jpg" alt="example of how content adapts to device" width="600" height="412" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2.jpg         600w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Res-Display-2-300x206.jpg 300w" sizes="(max-width: 600px) 100vw, 600px"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Note</strong><strong>:</strong> Apart from RWD there
+                    is another approach called
+                    <strong>Adaptive Web Design (<a class="sideLinks" href="https://en.wikipedia.org/wiki/Adaptive_web_design">AWD</a>)</strong>. In the AWD approach, there will be a specific design for
+                    each device. However, AWD might not be suitable all the
+                    time. Besides, designing AWD sites takes more time and money
+                    in comparison to the RWD sites.
+                  </p>
+                  <h3>
+                    <span id="Advantages_of_Responsive_Design"><strong>Advantages of Responsive Design:</strong></span>
+                  </h3>
+                  <p>
+                    <strong>#1)</strong>
+                    <span style="color: #000000"><strong>User Experience:</strong> </span>Based on the device from which we access an RW, it hides
+                    the unusual elements and helps the users achieve their goals
+                    faster.
+                    <span style="text-decoration: underline">For example:</span>
+                    if we open an RW from mobile then it hides the unimportant
+                    elements and speeds up the loading of web pages.
+                  </p>
+                  <p>
+                    <strong>#2)</strong>
+                    <span style="color: #000000"><strong>Sharing or Linking:</strong> </span>For an RW only one URL is used for various devices. As only
+                    a single URL is accumulating all the data and information
+                    from various devices, it gives a better UX for users.
+                  </p>
+                  <p>
+                    <strong>#3)</strong> Little or minimum maintenance required
+                    for an RW.
+                  </p>
+                  <p><strong>#4)</strong> RW layouts are fluid.</p>
+                  <p>
+                    <span style="text-decoration: underline"><strong>Differences between Responsive Web Design and Adaptive
+                        Web Design:</strong></span>
+                  </p>
+                  <p>RWD &amp; AWD are closely related to one another.</p>
+                  <ul>
+                    <li>
+                      RWD reacts quickly and positively to the changes whereas
+                      AWD can be modified easily for a new purpose.
+                    </li>
+                    <li>
+                      RWD has multiple fluid grid layouts and AWD has multiple
+                      fixed width layouts.
+                    </li>
+                    <li>Images in RWD are called as context-aware.</li>
+                  </ul>
+                  <h3>
+                    <span id="Main_Components_of_Responsive_Website_Design">Main Components of Responsive Website Design:</span>
+                  </h3>
+                  <p>Responsive Web Design has three main components:</p>
+                  <p>
+                    <strong>#1) </strong><span style="color: #ff6600"><strong><span style="color: #000000">Flexible Layouts:</span>
+                      </strong></span>Building a website with a flexible grid that can be easily
+                    resized to any width dynamically.
+                  </p>
+                  <p>
+                    <strong>#2) </strong><span style="color: #000000"><strong>Media Queries:</strong> </span>Provide various styles for the browsers and devices based
+                    on the context, such as&nbsp;the orientation of the device,
+                    viewport, etc.
+                  </p>
+                  <p>
+                    <strong>#3)
+                      <span style="color: #ff6600"><span style="color: #000000">Flexible Media:</span></span></strong>
+                    As the size of the viewports changes, the media (images,
+                    videos etc.) also need to change their size or resolution
+                    according to the requirement.
+                  </p>
+                  <p>
+                    <strong>Note</strong><strong>:</strong> “Viewport” is the
+                    area of the browser where the actual content of the website
+                    is displayed. Viewport does not include the toolbars, tabs
+                    etc.
+                  </p>
+                  <h3>
+                    <span id="Responsive_Web_Design_Examples">Responsive Web Design Examples</span>
+                  </h3>
+                  <p>
+                    <span style="text-decoration: underline"><strong>Example #1)</strong></span>
+                  </p>
+                  <p>
+                    Open the link <em>www.fpl.com</em> from various devices and
+                    observe the URL. The URL of a Responsive website remains
+                    same for all devices.
+                  </p>
+                  <p style="text-align: left">
+                    <strong>a)</strong> View of the RW from a desktop or laptop
+                    (large screen size)
+                  </p>
+                  <p style="text-align: left">
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-laptop.jpg"><img class="alignnone wp-image-10838 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-laptop-e1563453312872.jpg" alt="rwd-fpl-laptop" width="740" height="394" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10838 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-laptop-e1563453312872.jpg" alt="rwd-fpl-laptop" width="740" height="394"></noscript></a>
+                  </p>
+                  <p style="text-align: left">
+                    <strong>b)</strong> View of the RW from a tablet (medium
+                    screen size)
+                  </p>
+                  <p style="text-align: left">
+                    <img class="alignnone wp-image-10840 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-Tab.jpg" alt="rwd-fpl-tablet" width="450" height="768" sizes="(max-width: 450px) 100vw, 450px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-Tab.jpg         450w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-Tab-176x300.jpg 176w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10840 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-Tab.jpg" alt="rwd-fpl-tablet" width="450" height="768" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-Tab.jpg         450w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-Tab-176x300.jpg 176w" sizes="(max-width: 450px) 100vw, 450px"></noscript>
+                  </p>
+                  <p style="text-align: left">
+                    <strong>c)</strong> View of the RW from a mobile (small
+                    screen size)
+                  </p>
+                  <p>
+                    <img class="alignnone wp-image-10839 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-mobile.jpg" alt="rwd-fpl-mobile" width="270" height="480" sizes="(max-width: 270px) 100vw, 270px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-mobile.jpg         270w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-mobile-169x300.jpg 169w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10839 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-mobile.jpg" alt="rwd-fpl-mobile" width="270" height="480" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-mobile.jpg         270w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/RWD-FPL-mobile-169x300.jpg 169w" sizes="(max-width: 270px) 100vw, 270px"></noscript>
+                  </p>
+                  <p>
+                    <span style="text-decoration: underline"><strong>Example #2)</strong></span>
+                  </p>
+                  <p>
+                    Open the site <em>www.yepme.com</em> from a laptop and also
+                    from a mobile and compare the URLs. This
+                    <em>yepme.com</em> link is not a responsive link.
+                  </p>
+                  <p>
+                    <strong>a)</strong> View of a non-responsive website from a
+                    desktop or laptop
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Laptop.jpg"><img class="alignnone wp-image-10834 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Laptop-e1563453330850.jpg" alt="non-rwd-laptop" width="740" height="394" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10834 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Laptop-e1563453330850.jpg" alt="non-rwd-laptop" width="740" height="394"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>b)</strong> View of a non-responsive website from a
+                    mobile
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile.jpg"><img class="alignnone size-full wp-image-10835 lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile.jpg" alt="non-rwd-mobile" width="270" height="480" sizes="(max-width: 270px) 100vw, 270px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile.jpg         270w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile-169x300.jpg 169w" data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-10835" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile.jpg" alt="non-rwd-mobile" width="270" height="480" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile.jpg         270w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Non-RWD-Mobile-169x300.jpg 169w" sizes="(max-width: 270px) 100vw, 270px"></noscript></a>
+                  </p>
+                  <h3>
+                    <span id="How_to_Test_a_Responsive_Website">How to Test a Responsive Website</span>
+                  </h3>
+                  <p>
+                    The&nbsp;Responsive design test means
+                    <a class="sideLinks" href="https://www.softwaretestinghelp.com/web-application-testing/">testing the website</a>
+                    or URL from different devices. Practically, it is not
+                    possible to test the responsive website completely
+                    because&nbsp;to do so we need to set up various systems for
+                    various screen sizes.
+                  </p>
+                  <p>
+                    A possible way for the&nbsp;responsive&nbsp;test is by
+                    resizing the browser window size as per the test scenario.
+                  </p>
+                  <p>
+                    Some browsers, such as IE and Safari will provide plug-ins
+                    or browser extensions which will help you view the viewport
+                    area in pixels. This makes the testing easy by getting the
+                    desired screen size by modifying the pixels.
+                  </p>
+                  <p>
+                    Other browsers like Chrome provide software or program
+                    called<em><strong> “Emulator”</strong></em><span style="color: #000000">&nbsp;</span>which will help
+                    change the screen features and environment as per the
+                    desired device needed for testing.
+                  </p>
+                  <p>
+                    <strong>Note:</strong> <em><strong>“Emulator”</strong></em><span style="color: #000000">&nbsp;</span>is software or
+                    program that is provided within the browser which makes the
+                    host system (current browser) behave like the guest system
+                    (browser of the desired device that is to be tested for the
+                    screen size desired).
+                  </p>
+                  <p>
+                    Even though the emulators cannot give you the exact
+                    environment needed for testing, they are a cost-effective
+                    solution to test an RW at a high-level.
+                  </p>
+                  <h3>
+                    <span id="Sample_Test_scenarios_for_responsive_website_testing">Sample Test scenarios for responsive website
+                      testing:</span>
+                  </h3>
+                  <p>
+                    The responsive web design tester should make sure that
+                    responsive design is satisfying all the below-mentioned
+                    <a class="sideLinks" href="https://www.softwaretestinghelp.com/test-cases-vs-test-scenarios/">test scenarios</a>
+                    to ensure it is a bug-free responsive design.
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#1)</strong></span>
+                    Responsive website link or URL should be the same for all
+                    browsers in each and every device irrespective of the screen
+                    resolution.
+                  </p>
+                  <p>
+                    Suppose <em>www.abc.com</em> is a responsive website. If we
+                    open it on a laptop and on a mobile phone then the URL
+                    should be the same on both the devices. The website opened
+                    in the mobile browser should not start with
+                    <em>www.m.abc.com</em> or <em>www.mobile.abc.com</em>
+                  </p>
+                  <p>
+                    <strong><span style="text-decoration: underline">Example:</span> </strong>Open the website <em>www.kotak.com</em> from a laptop and
+                    also open the same from mobile too and observe the URL in
+                    both the devices. The URL is not the same for both the
+                    devices.
+                  </p>
+                  <p>
+                    Below snapshot displays how the URL changes for a
+                    <strong>non-responsive website in different devices</strong>
+                    such as laptop and mobile.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg"><img class="alignnone wp-image-10841 lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg" alt="non-responsive website in different devices" width="740" height="324" sizes="(max-width: 740px) 100vw, 740px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg         992w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st-300x131.jpg 300w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st-768x336.jpg 768w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10841" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg" alt="non-responsive website in different devices" width="740" height="324" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg         992w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st-300x131.jpg 300w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st-768x336.jpg 768w" sizes="(max-width: 740px) 100vw, 740px"></noscript></a>
+                  </p>
+                  <p>
+                    Open the website <em>www.w3schools.com</em> from a laptop
+                    and from mobile and check the URLs. It should be the same
+                    for both the devices.
+                  </p>
+                  <p>
+                    <strong>Below snapshot shows the URL remains the same for a
+                      responsive website in different devices:</strong>
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg"><img class="alignnone wp-image-10929 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg" alt="Test scenario 2 for RWD" width="624" height="235" sizes="(max-width: 624px) 100vw, 624px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg         624w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD-300x113.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10929 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg" alt="Test scenario 2 for RWD" width="624" height="235" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg         624w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD-300x113.jpg 300w" sizes="(max-width: 624px) 100vw, 624px"></noscript></a>
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#2)</strong> </span>The
+                    display location of the content (images, sub-links, menus,
+                    etc.) of a responsive website should change dynamically as
+                    per the change in the screen resolution. That is, if we
+                    change the screen resolution from the size of the laptop to
+                    a mobile then the display of menu options should change
+                    dynamically.
+                  </p>
+                  <p>
+                    <strong><span style="text-decoration: underline">Example:</span> </strong>Open the link <em>www.fpl.com</em> from a laptop and click
+                    on the menu on the right top corner of the window. Menu
+                    options are displayed as shown below:
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg"><img class="alignnone wp-image-10843 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" alt="RWD menu testing 1" width="700" height="373" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop-300x160.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10843 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" alt="RWD menu testing 1" width="700" height="373" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop-300x160.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"></noscript></a>
+                  </p>
+                  <p>
+                    Open <em>www.fpl.com</em> from mobile and click on the menu
+                    on the right top corner of the window. Menu options are as
+                    below:
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg"><img class="alignnone wp-image-10844 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg" alt="RWD menu testing mobile" width="324" height="576" sizes="(max-width: 324px) 100vw, 324px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg         324w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile-169x300.jpg 169w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10844 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg" alt="RWD menu testing mobile" width="324" height="576" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg         324w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile-169x300.jpg 169w" sizes="(max-width: 324px) 100vw, 324px"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Note:</strong> This scenario can also be tested
+                    using browser emulators (<span style="text-decoration: underline">Ex:</span>
+                    chrome).
+                  </p>
+                  <p>
+                    Open the website <em>www.fpl.com</em> through a desktop and
+                    observe how the menu options are displayed. See below
+                    snapshot:
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg"><img class="alignnone wp-image-10843 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" alt="Chrome emulator to test responsive design" width="700" height="373" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop-300x160.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10843 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" alt="Chrome emulator to test responsive design" width="700" height="373" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop-300x160.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"></noscript></a>
+                  </p>
+                  <p>
+                    Now resize the browser window to that of mobile screen size
+                    and then check the display of the menu options. See below
+                    snapshot:
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg"><img class="alignnone wp-image-10845 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg" alt="Chrome emulator to test responsive design-resized" width="750" height="422" sizes="(max-width: 750px) 100vw, 750px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg         750w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized-300x169.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10845 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg" alt="Chrome emulator to test responsive design-resized" width="750" height="422" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg         750w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized-300x169.jpg 300w" sizes="(max-width: 750px) 100vw, 750px"></noscript></a>
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#3)</span>&nbsp;</strong>URLs of a responsive website should also be resolution
+                    specific.
+                  </p>
+                  <p>
+                    <strong>Pre-requisite to test this scenario:</strong> Ask
+                    the developer to insert any sub-link into the Responsive
+                    testing website where the sub-link is not responsive.
+                  </p>
+                  <p>
+                    <span style="text-decoration: underline">For example</span>,
+                    the developer can insert link <em>www.snapdeal.com</em> to
+                    our testing website.
+                  </p>
+                  <p>
+                    Now, open the responsive testing website from a mobile and
+                    click on the sub-link mentioned in the pre-requisite. Then
+                    the URL of the sub-link should change to<em>
+                      https://m.snapdeal.com</em>.
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#4)</strong></span> The
+                    same scenario can be tested from a laptop too. Open the RW
+                    from a desktop or laptop and click on the sub-link
+                    (mentioned in the pre-requisite of test scenario three) that
+                    is not responsive. The URL of the sub link should not change
+                    (as we are testing this scenario from the laptop the URL
+                    should remain the same).
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#5)</strong><strong>&nbsp;</strong></span><strong>Pre-requisite to test this scenario:</strong> Ask
+                    the developer to insert any sub-link,
+                    <span style="text-decoration: underline">for example,</span>
+                    <em>www.paytm.com</em> into the testing site. The mobile
+                    device in which you are going to execute this scenario
+                    should have the respective application of Paytm installed in
+                    the mobile.
+                  </p>
+                  <p>
+                    Now open our testing responsive website from a mobile and
+                    click on the “paytm” sub-link. Then the Paytm application
+                    which is installed in the mobile should be opened. (The user
+                    should not be redirected to the website in the browser or
+                    another window; only the app should be open.)
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#6)</strong>&nbsp;</span>The images in the responsive website are resolution
+                    specific. It means that the resolution of the image inserted
+                    in the code of responsive website designed for mobile
+                    compatibility is different from that of a desktop or tablet.
+                    Each screen size should have its specific image in the
+                    design.
+                  </p>
+                  <p>
+                    <strong>Pre-requisite to test this scenario:</strong>
+                    Testing and checking the resolution of the images could be a
+                    tough task. Ask the developer to insert three different
+                    images in the responsive website separately for mobile,
+                    tablet and desktop.
+                  </p>
+                  <p>
+                    Open the testing responsive design website from a desktop,
+                    tablet and a mobile. The images on the responsive web page
+                    should be different for all the three devices.
+                  </p>
+                  <p><strong>(OR)</strong></p>
+                  <p>
+                    Open the testing RW from a desktop and check the image on
+                    the web page. Now resize the window to that of a tablet and
+                    check the image. This should be different from that of the
+                    image shown for the desktop screen size. Now you can resize
+                    the window to mobile screen size and check the image. This
+                    image should also be different from the above two images.
+                  </p>
+                  <p>
+                    <strong><span style="text-decoration: underline">Example:</span> </strong>Open the responsive site <em>www.fpl.com</em> from a
+                    desktop; right click on the image on the
+                    <em>home page -&gt; select “Inspect”</em> from the menu.
+                    Check the image resolution (check the image file name
+                    extension .jpg) from the code. See the below screenshot:
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1.jpg"><img class="alignnone wp-image-10865 lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1.jpg" alt="image testing for responsive webs design laptop" width="740" height="394" sizes="(max-width: 740px) 100vw, 740px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1.jpg         900w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1-300x160.jpg 300w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1-768x409.jpg 768w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10865" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1.jpg" alt="image testing for responsive webs design laptop" width="740" height="394" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1.jpg         900w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1-300x160.jpg 300w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_desktop-1-768x409.jpg 768w" sizes="(max-width: 740px) 100vw, 740px"></noscript></a>
+                  </p>
+                  <p>
+                    Now resize the same window to that of a tablet screen size
+                    and check for the image resolution. (The image name
+                    extension is medium.jpg)
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab.jpg"><img class="alignnone wp-image-10848 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab.jpg" alt="image testing for responsive webs design tablet" width="700" height="604" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab-300x259.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10848 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab.jpg" alt="image testing for responsive webs design tablet" width="700" height="604" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_tab-300x259.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"></noscript></a>
+                  </p>
+                  <p>
+                    Finally, resize the window size to that of a mobile screen
+                    size and check the image. (The image name extension is
+                    small.jpg)
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile.jpg"><img class="alignnone wp-image-10847 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile.jpg" alt="image testing for responsive webs design mobile" width="415" height="707" sizes="(max-width: 415px) 100vw, 415px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile.jpg         415w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile-176x300.jpg 176w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10847 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile.jpg" alt="image testing for responsive webs design mobile" width="415" height="707" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile.jpg         415w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC6-image-res_mobile-176x300.jpg 176w" sizes="(max-width: 415px) 100vw, 415px"></noscript></a>
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#7)</strong><strong>&nbsp;</strong></span>Click randomly anywhere on the web page and check if any
+                    data or text which is not hyperlinked gets initiated and
+                    redirected to any other page or content. This tests whether
+                    any word or text is marked as the hyperlink in the
+                    <a class="sideLinks" href="https://www.softwaretestinghelp.com/how-to-perform-backend-testing/">back end</a>.
+                  </p>
+                  <p>
+                    <strong>Note</strong><strong>:</strong> In a few projects,
+                    the requirements talk about the pixel size and resolution of
+                    the screen for particular devices. (<span style="text-decoration: underline">For example</span>, a tablet view for their RW should be at 15:15 pixel and
+                    for a mobile, it should be at 10:10 etc.)
+                  </p>
+                  <p>
+                    Testing for the dynamic changes that should happen for the
+                    RW display when we change the pixel size is the main
+                    scenario.
+                  </p>
+                  <p>
+                    <span style="color: #ff6600"><strong>#8)</strong></span>&nbsp;Open our testing RW in a browser and view the
+                    contents and display of main images. Now resize the window
+                    till the breakpoint of the tablet size and verify the
+                    changes that should happen to the image resolution and any
+                    other content. At breakpoints, the changes should happen
+                    dynamically (sometimes the changes will not happen at the
+                    breakpoints and may change at some other pixel size which is
+                    a defect.)
+                  </p>
+                  <h3>
+                    <span id="Tools_to_Test_a_Responsive_Website">Tools to Test a Responsive Website</span>
+                  </h3>
+                  <p>
+                    There are few tools (websites) that will let you preview the
+                    web pages of our responsive website.
+                  </p>
+                  <p>
+                    <span style="text-decoration: underline">For example,</span>
+                    we can test our responsive site at different predefined
+                    screen resolutions (smartphones, tablets, etc.) and also
+                    customize to any desired resolution. These tools make
+                    testing activities easier and quicker. Such in-browser tools
+                    can be termed as <strong><em>“Responsinator”</em></strong>.
+                  </p>
+                  <p>
+                    Some tools also offer an important feature of capturing the
+                    responsive screenshot that might help us test the website
+                    designs, HTML, layouts, CSS, etc. of the responsive website.
+                  </p>
+                  <p>
+                    These tools are great alternatives when the actual devices
+                    are not available or ready.
+                  </p>
+                  <p><strong>Here is a quick tool list:</strong></p>
+                  <p>
+                    <strong>#1)</strong>&nbsp;<a class="sideLinks" href="http://responsivedesignchecker.com/">Responsive design checker</a>
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1.jpg"><img class="alignnone wp-image-10849 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1.jpg" alt="Responsive design checker" width="700" height="362" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1-300x155.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10849 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1.jpg" alt="Responsive design checker" width="700" height="362" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-1-300x155.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"></noscript></a>
+                  </p>
+                  <p>
+                    Enter the URL of the responsive website that needs to be
+                    tested in the above “Enter Your URL Here” field and click
+                    “GO”. You can even select the device and resolution at which
+                    you want to view the responsive site.
+                  </p>
+                  <p>
+                    Now enter<em> www.fpl.com</em> in the field, select the
+                    layout “Nexus 7 PORTRAIT” and click GO. The site gets
+                    displayed in the resolution of the selected format.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2.jpg"><img class="alignnone wp-image-10850 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2.jpg" alt="tool-1-2" width="749" height="411" sizes="(max-width: 749px) 100vw, 749px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2.jpg         749w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2-300x165.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10850 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2.jpg" alt="tool-1-2" width="749" height="411" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2.jpg         749w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-1-2-300x165.jpg 300w" sizes="(max-width: 749px) 100vw, 749px"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>#2)</strong>&nbsp;<a class="sideLinks" href="http://quirktools.com/screenfly/">Screenfly</a>
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2.jpg"><img class="alignnone wp-image-10931 lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2.jpg" alt="screenfly RWD testing tool 2" width="485" height="137" sizes="(max-width: 485px) 100vw, 485px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2.jpg        624w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2-300x85.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10931" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2.jpg" alt="screenfly RWD testing tool 2" width="485" height="137" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2.jpg        624w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/screenfly-RWD-testing-tool-2-300x85.jpg 300w" sizes="(max-width: 485px) 100vw, 485px"></noscript></a>
+                  </p>
+                  <p>
+                    Enter the testing site <em>www.fpl.com</em> and click GO.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-2-1.jpg"><img class="alignnone wp-image-10866 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-2-1-e1563453423279.jpg" alt="Screenfly 2" width="740" height="382" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10866 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-2-1-e1563453423279.jpg" alt="Screenfly 2" width="740" height="382"></noscript></a>
+                  </p>
+                  <p>
+                    Change the layout to desktop, tablet, mobile, etc. and test
+                    the site. With this tool, you can even customize the
+                    resolution.
+                  </p>
+                  <p>
+                    <span style="text-decoration: underline">For example</span>,
+                    set the screen resolution to 512 x 256 and test the site.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3.jpg"><img class="alignnone wp-image-10853 lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3.jpg" alt="Screenfly 3" width="485" height="251" sizes="(max-width: 485px) 100vw, 485px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3.jpg         800w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3-300x155.jpg 300w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3-768x397.jpg 768w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10853" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3.jpg" alt="Screenfly 3" width="485" height="251" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3.jpg         800w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3-300x155.jpg 300w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-2-3-768x397.jpg 768w" sizes="(max-width: 485px) 100vw, 485px"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Note</strong><strong>:</strong> With this tool, you
+                    can even test<strong> scenario 6</strong> easily by changing
+                    the resolutions and verifying the image naming.
+                  </p>
+                  <p>
+                    <strong>#3)</strong><em>&nbsp;</em><a class="sideLinks" href="https://designmodo.com/responsive-test/">Designmodo</a>
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-3-1.jpg"><img class="alignnone wp-image-10854 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-3-1-e1563453437380.jpg" alt="Designmodo 1" width="740" height="382" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10854 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-3-1-e1563453437380.jpg" alt="Designmodo 1" width="740" height="382"></noscript></a>
+                  </p>
+                  <p>
+                    Enter any URL, <em>www.makemytrip.com </em>and click Enter.
+                  </p>
+
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-3-2.jpg"><img class="alignnone wp-image-10855 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-3-2-e1563453449679.jpg" alt="Designmodo 2" width="740" height="377" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10855 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-3-2-e1563453449679.jpg" alt="Designmodo 2" width="740" height="377"></noscript></a>
+                  </p>
+                  <p>
+                    On the right-top side of the browser, you have the option to
+                    change the layout of the website to that of any specific
+                    mobile model or device etc.
+                  </p>
+                  <p>
+                    <strong>Note</strong><strong>:</strong> This tool has
+                    another feature like dragging the screen and modifying the
+                    resolution to our desired resolution.
+                  </p>
+                  <p>
+                    <strong>#4)</strong>&nbsp;<a class="sideLinks" href="http://www.isresponsive.com/">isResponsive</a>
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-4-1.jpg"><img class="alignnone wp-image-10856 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-4-1-e1563453462635.jpg" alt="isResponsive 1" width="740" height="382" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10856 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-4-1-e1563453462635.jpg" alt="isResponsive 1" width="740" height="382"></noscript></a>
+                  </p>
+                  <p>
+                    Enter the testing URL, <em>www.fpl.com</em> in the field and
+                    click on “Test” button.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-4-2.jpg"><img class="alignnone wp-image-10857 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-4-2-e1563453473119.jpg" alt="isResponsive 2" width="740" height="378" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10857 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-4-2-e1563453473119.jpg" alt="isResponsive 2" width="740" height="378"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Note:</strong> This tool has only a few fixed layout
+                    options on which our site can be tested.
+                  </p>
+                  <p>
+                    <strong>#5)</strong>&nbsp;<a class="sideLinks" href="http://mattkersley.com/responsive/">Mattkersley</a>
+                  </p>
+                  <p>
+                    If you want to have a view of your RW on multiple screen
+                    sizes at a time then this tool <em>mattkersley</em> is what
+                    you need.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1.jpg"><img class="alignnone wp-image-10858 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1.jpg" alt="Mattkersley 1" width="700" height="365" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1-300x156.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10858 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1.jpg" alt="Mattkersley 1" width="700" height="365" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-1-300x156.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"></noscript></a>
+                  </p>
+                  <p>
+                    Now enter your testing URL in the address bar and click
+                    enter. You can view the RW on multiple screen sizes at a
+                    time.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2.jpg"><img class="alignnone wp-image-10859 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2.jpg" alt="Mattkersley 2" width="700" height="360" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2-300x154.jpg 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10859 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2.jpg" alt="Mattkersley 2" width="700" height="360" srcset="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2.jpg         700w,https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-5-2-300x154.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>#6)</strong> By default,
+                    <a class="sideLinks" href="https://chrome.google.com/webstore/detail/responsive-web-design-tes/objclahbaimlfnbjdeobicmmlnbhamkg" target="_blank" rel="noopener">chrome has few Dev Tools</a>
+                    through which we can simulate the device mode and their
+                    capabilities.
+                  </p>
+                  <p>
+                    To use this feature of chrome, open any testing responsive
+                    design website like <em>www.fpl.com</em> in chrome and
+                    right-click on the webpage and select “Inspect” option from
+                    the menu or press Ctrl+Shift+I. The below window gets opened
+                    at the bottom of the web page.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-1.jpg"><img class="alignnone wp-image-10860 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-1-e1563453499673.jpg" alt="Chrome Dev Tools 1" width="740" height="394" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10860 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-1-e1563453499673.jpg" alt="Chrome Dev Tools 1" width="740" height="394"></noscript></a>
+                  </p>
+                  <p>Now click on the icon as shown in the below screenshot.</p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-2.jpg"><img class="alignnone wp-image-10861 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-2-e1563453510264.jpg" alt="Chrome Dev Tools 2" width="740" height="394" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10861 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-2-e1563453510264.jpg" alt="Chrome Dev Tools 2" width="740" height="394"></noscript></a>
+                  </p>
+                  <p>
+                    Mobile mode of the web page gets opened. From that, you can
+                    change the resolution to any specific pixel and also to any
+                    predefined mobile model which is displayed in the drop-down
+                    menu. View the below snapshot to get a clear idea:
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-3.jpg"><img class="alignnone wp-image-10862 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-3-e1563453525972.jpg" alt="Chrome Dev Tools 3" width="740" height="416" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10862 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-3-e1563453525972.jpg" alt="Chrome Dev Tools 3" width="740" height="416"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Note:</strong> We can also change the web page to
+                    portrait or landscape view too.
+                  </p>
+                  <p>
+                    <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-4.jpg"><img class="alignnone wp-image-10863 size-full lazyloaded" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-4-e1563453558814.jpg" alt="Chrome Dev Tools 4" width="740" height="416" data-ll-status="loaded"><noscript><img class="alignnone wp-image-10863 size-full" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Tool-6-4-e1563453558814.jpg" alt="Chrome Dev Tools 4" width="740" height="416"></noscript></a>
+                  </p>
+                  <p>
+                    <strong>Other good tools to test responsive design:</strong>
+                  </p>
+                  <p>
+                    <strong>7)</strong>&nbsp;<a class="sideLinks" href="https://responsivedesign.is/develop/testing" target="_blank" rel="noopener">ResponsiveDesign</a><br>
+                    <strong>8)&nbsp;</strong><a class="sideLinks" href="https://www.browserstack.com/responsive" target="_blank" rel="noopener">BrowserStack</a><br>
+                    <strong>9)&nbsp;</strong><a class="sideLinks" href="http://troy.labs.daum.net/" target="_blank" rel="noopener">Troy</a><br>
+                    <strong>10)</strong>&nbsp;<a class="sideLinks" href="http://ami.responsivedesign.is/" target="_blank" rel="noopener">AmIResponsiveDesign</a><br>
+                    <strong>11)</strong>&nbsp;<a class="sideLinks" href="https://www.responsinator.com/" target="_blank" rel="noopener">Responsinator</a><br>
+                    <strong>12)&nbsp;</strong><a class="sideLinks" href="http://www.studiopress.com/responsive/" target="_blank" rel="noopener">Studiopress</a><br>
+                    <strong>13)</strong>&nbsp;<a class="sideLinks" href="http://responsivetest.net" target="_blank" rel="noopener">ResponsiveTest</a><br>
+                    <strong>14)</strong> For MAC machines we have a separate
+                    application called “<a class="sideLinks" href="https://www.macupdate.com/app/mac/42455/aptus" target="_blank" rel="noopener">APTUS</a>” to test an RW. This application allows you to set-up
+                    various breakpoints on various devices for testing. APTUS is
+                    not a free application and we have to buy it from the Mac
+                    App Store.
+                  </p>
+                  <h3>
+                    <span id="Challenges_of_Testing_Responsive_Design_and_Possible_Solutions">Challenges of Testing Responsive Design and Possible
+                      Solutions</span>
+                  </h3>
+                  <p>
+                    <span style="color: #ff6600"><strong>Dynamic Test Strategy</strong></span>
+                  </p>
+                  <p>
+                    Moving from 320×480 (the resolution of the iPhone4) to
+                    2048×2048 (a large monitor) leaves over 4 Million possible
+                    browser sizes. Most test groups will narrow the list of test
+                    devices down to a handful. Even then, the manual testing
+                    problem is hard or impossible to approach.
+                  </p>
+                  <p>
+                    Developers cannot possibly anticipate all of the platform
+                    problems, and testers can’t catch them before release.
+                    Because of this, we find the occasional user interface issue
+                    in production.
+                  </p>
+                  <p>
+                    Maybe someone reduced the size of their browser causing
+                    important text fields to be covered by a page label. Perhaps
+                    some code designed to handle dynamic page resizing breaks
+                    modal date pickers and never gets noticed by a normal test
+                    built on WebDriver. There are too many display options to
+                    build tests for and too little time.
+                  </p>
+                  <p>
+                    <strong>Let’s take a look at a
+                      <span style="text-decoration: underline">realistic example</span>
+                      to illustrate the problem.</strong>
+                  </p>
+                  <p>
+                    Dynamic pages, things like advertising sliders, and content
+                    streamed in from users in different page sizes, are a staple
+                    of many software products. Add to this the fact that we
+                    can’t predict how the page will be displayed and many
+                    automation efforts start with failure.
+                  </p>
+                  <p>
+                    I see two popular solutions for this problem — using a
+                    standardized, or baseline, data set and refreshing that
+                    every time the test suite is run, and taking things one
+                    environment or platform at a time.
+                  </p>
+                  <p>
+                    Standard data ensures page content will look the same every
+                    time we load the test environment. That strategy combined
+                    with something like Sauce Labs that gives people access to
+                    many platforms and you get pretty far.
+                  </p>
+                  <p>
+                    This approach takes time and resources. You will need time
+                    from someone with database access, usually a DBA, to create
+                    and update database exports. And, someone has to create
+                    scripts setup and teardown scripts to maintain the test
+                    environment. After all this effort, you might end up with
+                    the type of sanitized environment bugs love to hide in.
+                  </p>
+                  <p>
+                    Alternately, you could use Visual Testing technology to help
+                    automate tests on web pages that vary in layout and content.
+                    Using this tooling, you can create tests without any changes
+                    to your test environment, and without requiring any skill
+                    sets from people outside of your test group.
+                  </p>
+                  <p><strong>Let’s look at an example.</strong></p>
+                  <p>Consider the Twitter mobile app.</p>
+                  <p>
+                    This product is a combination of continuously changing user
+                    content and advertising. There are also a few core parts of
+                    the user interface, such as the news feed and notifications,
+                    in the header.
+                  </p>
+                  <p>
+                    Using a visual testing tool, you could start by performing a
+                    screen capture of the entire scrollable page, not just the
+                    viewable area. You could choose a comparison option that
+                    ignores text content but focuses on on-page elements.
+                  </p>
+                  <p>
+                    <em><strong><span style="text-decoration: underline">For example</span>,</strong></em>
+                    you could see that the fields for tweets exist, that each
+                    tweet has a name element and a date/time element, without
+                    worrying about what is in the elements.
+                  </p>
+                  <p>
+                    Searching for elements across full pages also relieves the
+                    maintenance and complexity burden we see in many automated
+                    tests. Rather than manipulating data on a page, saving,
+                    scrolling and then verifying, you get everything in one
+                    shot. This means less code to write, less code to maintain,
+                    and fewer false positives in the nightly test runs.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">Responsive Testing for Responsive Design:</span></strong>
+                  </p>
+                  <p>
+                    Responsive design has added the combinatorial problem to
+                    every available platform. The question is; out of all of
+                    these possible platforms and screen sizes, which do we
+                    select for the best test coverage.
+                  </p>
+                  <p>
+                    Reducing the number of environments we cover to only the
+                    most popular ones makes the technical task easier while also
+                    ignoring the coverage problem.
+                  </p>
+                  <p>
+                    Increasing the number of environments with an automation
+                    framework alone creates a maintenance nightmare and
+                    potentially adds an unsolvable testing problem.
+                  </p>
+                  <p>
+                    The combination of good visual testing tools with a flexible
+                    UI automation framework, such as web driver, can make the
+                    technical aspects of this problem not just easier to deal
+                    with, but solvable.
+                  </p>
+                  <p>
+                    The target is good user interface coverage with a reasonable
+                    maintenance burden. Visual testing is your only robust and
+                    scalable option.
+                  </p>
+                  <h3>
+                    <span id="Tips_for_Responsive_web_testing">Tips for Responsive web testing</span>
+                  </h3>
+                  <p>
+                    <strong><span style="color: #ff6600">#1)&nbsp;</span></strong>While testing an RW you should mindful of the design
+                    consistency such as the alignment of images, texts, padding
+                    around the edges, etc. across all the browsers and Operating
+                    systems.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#2)&nbsp;</span></strong>During the testing of an RW, the tester should be aware of
+                    what to test and how to test on multiple devices at
+                    different breakpoints. Otherwise, it could be quite
+                    exhaustive and disorienting.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#3)</span></strong>&nbsp;For thorough testing of a responsive website, the
+                    tester and developer coordination is a must. The developer
+                    should help testers with creating the conditions mentioned
+                    in the prerequisites of the test cases.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#4)</span></strong>&nbsp; Check whether the web pages are readable at all
+                    resolutions, i.e. the content should be readable even if we
+                    resize the browser to mobile screen size.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#5)&nbsp;</span></strong>&nbsp;The important content of the RW should be visible for
+                    all breakpoints, i.e. if we change the browser size from
+                    desktop screen to mobile screen then the main images, main
+                    text, menu, etc. should remain the same.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#6)</span></strong>&nbsp; If the browser is resized for testing then any click
+                    area (like buttons, menus, sub-links, etc.) of the RW should
+                    be suitable for clicking.
+                  </p>
+                  <p>
+                    <strong><span style="color: #ff6600">#7)</span></strong>
+                    Resizing the browser and testing the responsive website can
+                    identify only a few major issues whereas there may be a few
+                    other issues related to finger-swipes, tapping, etc. on
+                    mobile devices. Testing these particular features on the
+                    actual devices can lead to better defect finding and
+                    removal.
+                  </p>
+                  <h3><span id="Conclusion">Conclusion</span></h3>
+                  <p>
+                    When we are testing Responsive design will have many
+                    challenges. You should think in an efficient way to overcome
+                    the challenges.
+                  </p>
+                  <p>
+                    Testing a Responsive website is very important for a
+                    successful future of many
+                    <a class="sideLinks" href="https://www.softwaretestinghelp.com/beginners-guide-to-mobile-application-testing/">mobile applications.</a>
+                    Mobile users are only going to increase and their
+                    expectations are very varied from that of desktop users.
+                    Implementation and thorough testing of RWD is a great way to
+                    set your site up to meet the expectations.
+                  </p>
+                  <p>
+                    Implementation and thorough testing of RWD is a great way to
+                    set your site up to meet the expectations.
+                  </p>
+                  <p>
+                    We hope the information, tips and test scenarios discussed
+                    in this article will surely help your responsive website
+                    testing needs.
+                  </p>
+                  <p>
+                    <em><strong>About the&nbsp;author:</strong> This is
+                      a&nbsp;guest post by Laxmi. She is having 7+ years of
+                      Software testing experience and currently working as a
+                      senior software test engineer.</em>
+                  </p>
+                  <p>
+                    <em><strong>Try all the examples provided in this article and let
+                        us know if you have any queries/comments on the
+                        same.</strong></em>
+                  </p>
+                  <div class="rp4wp-related-posts rp4wp-related-post">
+                    <h3>
+                      <span id="Recommended_Reading">Recommended Reading</span>
+                    </h3>
+                    <ul class="sideList">
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/what-is-alpha-testing-beta-testing/">Alpha Testing and Beta Testing (A Complete
+                            Guide)</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/bvt-build-verification-testing-process/">Build Verification Testing (BVT Testing) Complete
+                            Guide</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/functional-testing-vs-non-functional-testing/">Functional Testing Vs Non-Functional Testing</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/types-of-software-testing/">Types of Software Testing: Different Testing Types
+                            with Details</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/tools/">Best Software Testing Tools 2020 [QA Test
+                            Automation Tools]</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/etl-testing-data-warehouse-testing/">ETL Testing Data Warehouse Testing Tutorial (A
+                            Complete Guide)</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/security-testing-of-web-applications/">Web Application Security Testing Guide</a>
+                        </div>
+                      </li>
+                      <li class="rp4wp-col rp4wp-col-first rp4wp-col-last">
+                        <div class="rp4wp_component rp4wp_component_title rp4wp_component_2">
+                          <a class="sideLinks" href="https://www.softwaretestinghelp.com/best-qa-software-testing-service-provider-company/">Best QA Software Testing Services from
+                            SoftwareTestingHelp</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-1-4">
-            <div class="row">
-              <div class="row">
+          <div class="col-1-4 thinBorder">
+            <div class="row noHorizontalMargins">
+              <div class="row noHorizontalMargins">
                 <h3>About SoftwareTestingHelp</h3>
               </div>
-              <div class="row sideText">
+
+              <div class="row sideText noHorizontalMargins">
                 <strong>Helping our community since 2006!</strong>
                 Most popular portal for Software professionals with
                 <strong>100 million+ visits and 300,000+ followers!</strong>
@@ -107,13 +1096,14 @@
               </div>
             </div>
             <br>
+            <div class="row thinBorder"></div>
             <br>
-            <div class="row">
-              <div class="row">
+            <div class="row noHorizontalMargins">
+              <div class="row noHorizontalMargins">
                 <h3>Recommended Reading</h3>
               </div>
 
-              <div class="row">
+              <div class="row noHorizontalMargins">
                 <ul class="sideList">
                   <li>
                     <a class="sideLinks" href="https://www.softwaretestinghelp.com/what-is-alpha-testing-beta-testing/">Alpha Testing and Beta Testing (A Complete Guide)</a>
@@ -150,6 +1140,17 @@
           </div>
         </div>
       </div>
+    </div>
+    <div style="background-color: #303030c0; padding: 30px;">
+    <div class="row"><h4 style="color:white">UCS - Universidade de Caxias do Sul</h4></div>
+      <div class="row"><h4 style="color:white">Programação de Aplicações Web I </h4></div>
+      <div class="row"><h4 style="color:white">Exercício Avaliativo 02 - Base CSS Framework</h4></div>
+      <div class="row"><h5 style="color:white">Alunos:</h5></div>
+      <div class="row"><h4 style="color:white">Adriel Izoton de Faci</h4></div>
+      <div class="row"><h4 style="color:white">Lucas Fraga Trentin</h4></div>
+
+      <br>
+      <br>
     </div>
     <script src="/default.fe761c5a.js"></script>
   </body>

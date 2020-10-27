@@ -1101,6 +1101,14 @@ h6, .h6 {
   background-color: gray;
 }
 
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #3a3a3a;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
 .sideText {
   border: 1px solid #c9e3f9;
   background-color: #dfebf5;
@@ -1132,6 +1140,15 @@ h6, .h6 {
 
 .coloredDescriptionText {
   color: #a90000;
+}
+
+.thinBorder {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.noHorizontalMargins {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .padding-left-0-25rem {
